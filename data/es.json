@@ -3,7 +3,10 @@
         "navHome": "Inicio",
         "navAbout": "Nosotros",
         "navServices": "Servicios",
-        "footerText": "&copy; 2025 Mi Sitio Web. Todos los derechos reservados."
+        "footerCopyright": "&copy; 2025 Mi Sitio Web. Todos los derechos reservados.",
+        "footerAbout": "Nosotros",
+        "footerServices": "Servicios",
+        "footerPrivacy": "Políticas de Privacidad"
     },
     "index": {
         "title": "Página Principal",
@@ -30,5 +33,40 @@
         "service2Desc": "Te asesoramos en estrategias digitales para optimizar tu presencia en línea y alcanzar a tu público objetivo.",
         "service3Title": "Marketing Online",
         "service3Desc": "Impulsamos tu marca a través de campañas de marketing digital efectivas y medición de resultados."
+    },
+    "privacidad": {
+        "title": "Políticas de Privacidad",
+        "lastUpdated": "Última actualización: 20 de Junio de 2025",
+        "sections": [
+            {
+                "heading": "1. Introducción",
+                "content": "<p>Bienvenido a las Políticas de Privacidad de EC.MX. Nos comprometemos a proteger su privacidad y sus datos personales. Esta política explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web EC.MX o sus aplicaciones cómo Mi Gasolinera.</p>"
+            },
+            {
+                "heading": "2. Información que Recopilamos",
+                "content": "<p>No recopilamos información personal.</p><p>La información que se recopila para la actualización de estaciones de servicio y precios de combustibles se obtiene a través de la Comisión Reguladora de Energía (CRE), entidad encargada de regular estas actividades. La CRE publica un reporte diario de precios de expendio al público, el cual es una fuente crucial para determinar los precios de venta al público en las estaciones de servicio. Además, la CRE otorga permisos para la operación de estaciones y establece regulaciones específicas. La información se obtiene a través del portal de la CRE y de la Oficialía de Partes Electrónica, donde se publican los reportes y se pueden realizar trámites relacionados. La correcta utilización de esta información es fundamental para garantizar el cumplimiento de las regulaciones y para la toma de decisiones informadas sobre la operación de las estaciones de servicio.</p>"
+            },
+            {
+                "heading": "3. Compartir Informacion",
+                "content": "<p>No compartimos información con terceros sin consentimiento, salvo cuando la ley lo requiera.</p>"
+            },
+            {
+                "heading": "4. Sus Derechos de Privacidad",
+                "content": "<p>Usted tiene ciertos derechos con respecto a la información de la estacion de servico siempre y cuando demuestre que es dueño o administrador de la estacion de servicio, incluyendo el derecho a corregir los datos de la estacion de servicio y precios. Para ejercer estos derechos, por favor contáctenos a contacto@e-ec-com.mx</p>"
+            },
+            {
+                "heading": "5. Seguridad de Datos",
+                "content": "<p>Hemos implementado medidas de seguridad técnicas y organizativas diseñadas para proteger la seguridad de cualquier información que procesamos. Sin embargo, recuerde que ninguna transmisión electrónica a través de Internet o método de almacenamiento electrónico es 100% seguro.</p>"
+            },
+            {
+                "heading": "6. Cambios a Esta Política de Privacidad",
+                "content": "<p>Nos reservamos el derecho de actualizar esta política en cualquier momento. Los cambios se publicarán en esta página. Se le aconseja revisar esta Política de Privacidad periódicamente para cualquier cambio.</p>"
+            }
+            ,
+            {
+                "heading": "7. Contáctenos",
+                "content": "<p>Si tiene alguna pregunta sobre estas Políticas de Privacidad, puede contactarnos:</p><ul><li>Por correo electrónico: <a href='mailto:contacto@e-ec-com.mx'>contacto@e-ec-com.mx</a></li></ul>"
+            }
+        ]
     }
 }

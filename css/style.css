@@ -69,9 +69,10 @@ body {
 
 /* Contenido Principal */
 main {
+    flex: 1;
     max-width: 960px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 5em 2em 2em 2em;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,13 +91,66 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 1em;
     background: #333;
     color: #fff;
-    position:absolute;
+    margin-top: 2em;
     bottom: 0;
-    width: 100%;
+    position: relative;
 }
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Por defecto en columna para móviles */
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 10px 0 0 0; /* Espacio entre el copyright y los enlaces */
+    padding: 0;
+    display: flex; /* Para que los enlaces estén en línea */
+    flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas pequeñas */
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+.lang-selector select {
+    background: #555;
+    color: #fff;
+    border: 1px solid #777; /* Borde sutil */
+    padding: 8px 22px 8px 10px;
+    cursor: pointer;
+    margin-left: 3px;
+    border-radius: 4px;
+    appearance: none; /* Elimina la apariencia por defecto del sistema operativo */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4L150.3%20206.5c-3.1%203.1-7.2%204.7-11.3%204.7s-8.2-1.5-11.3-4.7L5.4%2069.4c-6.2-6.2-6.2-16.4%200-22.6s16.4-6.2%2022.6%200l122.9%20123.1L264.4%2046.8c6.2-6.2%2016.4-6.2%2022.6%200s6.2%2016.4%200%2022.6z%22%2F%3E%3C%2Fsvg%3E'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px auto;
+}
+
+.lang-selector select:hover {
+    background: #777;
+    border-color: #999;
+}
+
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -135,13 +189,22 @@ footer {
     }
 
     .lang-selector {
-        margin-right:auto; /* Empuja el selector de idioma a la derecha */
+        margin-left: 0; /* Elimina el margin-left automático si está en el menú desplegable */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .lang-selector select {
+        width: 80%; /* Hace que el selector ocupe más ancho en móviles */
+        margin: 0 auto; /* Centra el selector */
+        display: block;
     }
 
     main {
         margin: 10px;
         padding: 15px;
     }
+
 }
 
 @media (max-width: 480px) {

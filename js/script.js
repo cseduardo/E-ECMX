@@ -22,16 +22,22 @@ async function applyContent(lang) {
     if (!langData) return;
 
     // Actualizar el título de la página
-    const pageName = document.body.id || getPageNameFromPath(); // Obtener el nombre de la página actual
-    const pageData = langData[pageName] || {}; // Obtener datos específicos de la página
+    const pageName = document.body.id || getPageNameFromPath();
+    const pageData = langData[pageName] || {};
 
-    document.getElementById('page-title').textContent = pageData.title || langData.common.navHome; // Fallback al título de inicio si no hay específico
+    document.getElementById('page-title').textContent = pageData.title || langData.common.navHome;
 
-    // Actualizar enlaces de navegación
+    // Actualizar enlaces de navegación (Header)
     document.getElementById('nav-home').textContent = langData.common.navHome;
     document.getElementById('nav-about').textContent = langData.common.navAbout;
     document.getElementById('nav-services').textContent = langData.common.navServices;
-    document.getElementById('footer-text').innerHTML = langData.common.footerText;
+
+    // Actualizar texto y enlaces del Footer
+    document.getElementById('footer-copyright').innerHTML = langData.common.footerCopyright;
+    document.getElementById('footer-about').textContent = langData.common.footerAbout;
+    document.getElementById('footer-services').textContent = langData.common.footerServices;
+    document.getElementById('footer-privacy').textContent = langData.common.footerPrivacy;
+
 
     // Cargar contenido específico de la página
     const contentDiv = document.getElementById('content');
@@ -71,6 +77,19 @@ async function applyContent(lang) {
                 <p>${pageData.service3Desc}</p>
             </div>
         `;
+    } else if (pageName === 'privacidad') { // Nuevo caso para políticas de privacidad
+        let sectionsHtml = '';
+        pageData.sections.forEach(section => {
+            sectionsHtml += `
+                <h2>${section.heading}</h2>
+                ${section.content}
+            `;
+        });
+        pageContentHTML = `
+            <h1>${pageData.title}</h1>
+            <p class="last-updated">${pageData.lastUpdated}</p>
+            ${sectionsHtml}
+        `;
     } else {
         pageContentHTML = `<p>Contenido no encontrado para esta página.</p>`;
     }
@@ -81,6 +100,10 @@ async function applyContent(lang) {
     document.documentElement.lang = lang;
     currentLanguage = lang; // Actualiza la variable global del idioma actual
     localStorage.setItem('selectedLanguage', lang); // Guarda la preferencia del usuario
+
+    if (languageSwitcher) {
+        languageSwitcher.value = lang;
+    }
 }
 
 // Función para determinar el nombre de la página actual basado en la URL
@@ -116,9 +139,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Cargar el idioma guardado o el idioma por defecto al cargar la página
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    applyContent(savedLanguage || 'es'); // Carga el idioma guardado o español por defecto
+    // --- Lógica para determinar el idioma inicial ---
+    const savedLanguage = localStorage.getItem('selectedLanguage'); // 1. Preferencia guardada
+    let initialLanguage = savedLanguage;
+
+    if (!initialLanguage) {
+        // 2. Intentar usar el idioma del navegador si no hay preferencia guardada
+        const browserLanguage = navigator.language.split('-')[0]; // Ej: "es-MX" -> "es"
+        if (['es', 'en'].includes(browserLanguage)) { // Verifica si soportamos este idioma
+            initialLanguage = browserLanguage;
+        }
+    }
+
+    if (!initialLanguage) {
+        initialLanguage = 'es'; // 3. Fallback a español si no se encuentra ninguno
+    }
+
+    applyContent(initialLanguage); // Carga el idioma determinado
 
     // Asignar IDs al body para facilitar la identificación de la página
     const currentPageName = getPageNameFromPath();

@@ -3,7 +3,10 @@
         "navHome": "Home",
         "navAbout": "About Us",
         "navServices": "Services",
-        "footerText": "&copy; 2025 My Website. All rights reserved."
+        "footerCopyright": "&copy; 2025 My Website. All rights reserved.",
+        "footerAbout": "About Us",
+        "footerServices": "Services",
+        "footerPrivacy": "Privacy Policy"
     },
     "index": {
         "title": "Home Page",
@@ -30,5 +33,39 @@
         "service2Desc": "We advise you on digital strategies to optimize your online presence and reach your target audience.",
         "service3Title": "Online Marketing",
         "service3Desc": "We boost your brand through effective digital marketing campaigns and results measurement."
+    },
+    "privacidad": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: June 20, 2025",
+        "sections": [
+            {
+                "heading": "1. Introduction",
+                "content": "<p>Welcome to the EC.MX Privacy Policy. We are committed to protecting your privacy and personal data. This policy explains how we collect, use, disclose, and protect your information when you visit our EC.MX website or applications such as Mi Gasolinera.</p>"
+            },
+            {
+                "heading": "2. Information We Collect",
+                "content": "<p>We do not collect personal information.</p><p>The information collected for updating service stations and fuel prices is obtained through the Energy Regulatory Commission (CRE), the agency responsible for regulating these activities. The CRE publishes a daily report on public retail prices, which is a crucial source for determining the prices charged to the public at service stations. Furthermore, the CRE issues permits for the operation of stations and establishes specific regulations. The information is accessed through the CRE portal and the Electronic Filing Office, where reports are published and related procedures can be conducted. The proper use of this information is essential to ensure compliance with regulations and to make informed decisions regarding the operation of service stations.</p>"
+            },
+            {
+                "heading": "3. Share Information",
+                "content": "<p>We do not share information with third parties without consent, except when required by law.</p>"
+            },
+            {
+                "heading": "4. Your Privacy Rights",
+                "content": "<p>You have certain rights regarding the service station information as long as you prove that you are the owner or manager of the service station, including the right to correct the service station data and prices. To exercise these rights, please contact us at contacto@e-ec-com.mx.</p>"
+            },
+            {
+                "heading": "5. Data Security",
+                "content": "<p>We have implemented technical and organizational security measures designed to protect the security of any information we process. However, please remember that no electronic transmission over the Internet or electronic storage method is 100% secure.</p>"
+            },
+            {
+                "heading": "6. Changes to This Privacy Policy",
+                "content": "<p>We reserve the right to update this policy at any time. Changes will be posted on this page. You are advised to review this Privacy Policy periodically for any changes.</p>"
+            },
+            {
+                "heading": "7. Contact Us",
+                "content": "<p>If you have any questions about these Privacy Policies, you can contact us:</p><ul><li>By email: <a href='mailto:contacto@e-ec-com.mx'>contacto@e-ec-com.mx</a></li></ul>"
+            }
+        ]
     }
 }
