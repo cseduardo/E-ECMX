@@ -1,0 +1,167 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Espacio para el menú flotante */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menú de Navegación Flotante */
+.navbar {
+    position: fixed; /* Hace que el menú sea flotante */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Color de resaltado al pasar el mouse */
+}
+
+.floating-menu select {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  background: none;
+  border: none;
+}
+
+.menu-toggle {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Oculta los enlaces en pantallas pequeñas */
+        flex-direction: column;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 60px; /* Debajo de la barra de navegación */
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces cuando el menú está activo */
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el icono de hamburguesa */
+    }
+
+    .lang-selector {
+        margin-right:auto; /* Empuja el selector de idioma a la derecha */
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-brand {
+        font-size: 1.2em;
+    }
+
+    .lang-selector button {
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}

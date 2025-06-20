@@ -1,0 +1,34 @@
+{
+    "common": {
+        "navHome": "Inicio",
+        "navAbout": "Nosotros",
+        "navServices": "Servicios",
+        "footerText": "&copy; 2025 Mi Sitio Web. Todos los derechos reservados."
+    },
+    "index": {
+        "title": "Página Principal",
+        "heading": "Bienvenido a Mi Sitio Web",
+        "paragraph1": "Esta es la página principal de nuestro sitio web responsivo y multilenguaje. Aquí puedes encontrar información general sobre lo que ofrecemos.",
+        "paragraph2": "Explora nuestras otras secciones para conocer más sobre nosotros y los servicios que brindamos.",
+        "callToAction": "¡Descubre más!"
+    },
+    "nosotros": {
+        "title": "Nosotros",
+        "heading": "¿Quiénes Somos?",
+        "paragraph1": "Somos un equipo apasionado dedicado a [tu área de negocio]. Nuestra misión es [tu misión].",
+        "paragraph2": "Con años de experiencia en el sector, nos esforzamos por ofrecer soluciones innovadoras y de alta calidad a nuestros clientes.",
+        "teamHeading": "Nuestro Equipo",
+        "teamMember1": "Juan Pérez - CEO",
+        "teamMember2": "María García - Directora de Operaciones"
+    },
+    "servicios": {
+        "title": "Nuestros Servicios",
+        "heading": "Servicios que Ofrecemos",
+        "service1Title": "Desarrollo Web",
+        "service1Desc": "Creamos sitios web modernos y funcionales, adaptados a tus necesidades y objetivos.",
+        "service2Title": "Consultoría Digital",
+        "service2Desc": "Te asesoramos en estrategias digitales para optimizar tu presencia en línea y alcanzar a tu público objetivo.",
+        "service3Title": "Marketing Online",
+        "service3Desc": "Impulsamos tu marca a través de campañas de marketing digital efectivas y medición de resultados."
+    }
+}

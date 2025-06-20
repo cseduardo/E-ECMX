@@ -1,0 +1,34 @@
+{
+    "common": {
+        "navHome": "Home",
+        "navAbout": "About Us",
+        "navServices": "Services",
+        "footerText": "&copy; 2025 My Website. All rights reserved."
+    },
+    "index": {
+        "title": "Home Page",
+        "heading": "Welcome to My Website",
+        "paragraph1": "This is the home page of our responsive and multilingual website. Here you can find general information about what we offer.",
+        "paragraph2": "Explore our other sections to learn more about us and the services we provide.",
+        "callToAction": "Discover More!"
+    },
+    "nosotros": {
+        "title": "About Us",
+        "heading": "Who Are We?",
+        "paragraph1": "We are a passionate team dedicated to [your business area]. Our mission is to [your mission].",
+        "paragraph2": "With years of experience in the sector, we strive to offer innovative and high-quality solutions to our clients.",
+        "teamHeading": "Our Team",
+        "teamMember1": "John Doe - CEO",
+        "teamMember2": "Mary Smith - Operations Director"
+    },
+    "servicios": {
+        "title": "Our Services",
+        "heading": "Services We Offer",
+        "service1Title": "Web Development",
+        "service1Desc": "We create modern and functional websites, tailored to your needs and goals.",
+        "service2Title": "Digital Consulting",
+        "service2Desc": "We advise you on digital strategies to optimize your online presence and reach your target audience.",
+        "service3Title": "Online Marketing",
+        "service3Desc": "We boost your brand through effective digital marketing campaigns and results measurement."
+    }
+}
