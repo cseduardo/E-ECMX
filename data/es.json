@@ -17,22 +17,22 @@
     },
     "nosotros": {
         "title": "Nosotros",
-        "heading": "¿Quiénes Somos?",
-        "paragraph1": "Somos un equipo apasionado dedicado a [tu área de negocio]. Nuestra misión es [tu misión].",
-        "paragraph2": "Con años de experiencia en el sector, nos esforzamos por ofrecer soluciones innovadoras y de alta calidad a nuestros clientes.",
+        "heading": "¿Quién soy?",
+        "paragraph1": "Soy un desarrollador apasionado dedicado al desarrollo de aplicaciones multiplataforma con Xamarin/MAUI y C#. Mi misión es realizar desarrollo de aplicaciones móviles reales que satisfagan la necesidad de los clientes y/o usuarios y darle solucion a ellas, ya sea una o varias necesidades de sus día a día.",
+        "paragraph2": "Con mas de 5 años de experiencia en el sector, nos esforzamos por ofrecer soluciones innovadoras y de alta calidad a nuestros clientes.",
         "teamHeading": "Nuestro Equipo",
-        "teamMember1": "Juan Pérez - CEO",
-        "teamMember2": "María García - Directora de Operaciones"
+        "teamMember1": "Eduardo Campos - CEO, Developer",
+        "teamMember2":""
     },
     "servicios": {
         "title": "Nuestros Servicios",
         "heading": "Servicios que Ofrecemos",
-        "service1Title": "Desarrollo Web",
-        "service1Desc": "Creamos sitios web modernos y funcionales, adaptados a tus necesidades y objetivos.",
-        "service2Title": "Consultoría Digital",
-        "service2Desc": "Te asesoramos en estrategias digitales para optimizar tu presencia en línea y alcanzar a tu público objetivo.",
-        "service3Title": "Marketing Online",
-        "service3Desc": "Impulsamos tu marca a través de campañas de marketing digital efectivas y medición de resultados."
+        "service1Title": "Desarrollo aplicaciones móviles, Desarrollo de Backend",
+        "service1Desc": "Creamos aplicaciones móviles y Backend modernas y funcionales, adaptadas a tus necesidades y objetivos.",
+        "service2Title": "",
+        "service2Desc": "",
+        "service3Title": "",
+        "service3Desc": ""
     },
     "privacidad": {
         "title": "Políticas de Privacidad",

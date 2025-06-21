@@ -3,7 +3,7 @@
         "navHome": "Home",
         "navAbout": "About Us",
         "navServices": "Services",
-        "footerCopyright": "&copy; 2025 My Website. All rights reserved.",
+        "footerCopyright": "&copy; 2025 E-EC.MX. All rights reserved.",
         "footerAbout": "About Us",
         "footerServices": "Services",
         "footerPrivacy": "Privacy Policy"
@@ -18,21 +18,21 @@
     "nosotros": {
         "title": "About Us",
         "heading": "Who Are We?",
-        "paragraph1": "We are a passionate team dedicated to [your business area]. Our mission is to [your mission].",
-        "paragraph2": "With years of experience in the sector, we strive to offer innovative and high-quality solutions to our clients.",
+        "paragraph1": "I am a passionate developer dedicated to cross-platform application development with Xamarin/MAUI and C#. My mission is to develop real mobile applications that meet the needs of clients and/or users and provide solutions to them, whether it is one or several needs in their daily lives.",
+        "paragraph2": "With more than 5 years of experience in the industry, we strive to provide innovative and high-quality solutions to our clients.",
         "teamHeading": "Our Team",
-        "teamMember1": "John Doe - CEO",
-        "teamMember2": "Mary Smith - Operations Director"
+        "teamMember1": "Eduardo Campos - CEO",
+        "teamMember2": ""
     },
     "servicios": {
         "title": "Our Services",
         "heading": "Services We Offer",
-        "service1Title": "Web Development",
-        "service1Desc": "We create modern and functional websites, tailored to your needs and goals.",
-        "service2Title": "Digital Consulting",
-        "service2Desc": "We advise you on digital strategies to optimize your online presence and reach your target audience.",
-        "service3Title": "Online Marketing",
-        "service3Desc": "We boost your brand through effective digital marketing campaigns and results measurement."
+        "service1Title": "Mobile application development, Backend development",
+        "service1Desc": "We create modern and functional mobile applications and backend systems, tailored to your needs and goals.",
+        "service2Title": "",
+        "service2Desc": "",
+        "service3Title": "",
+        "service3Desc": ""
     },
     "privacidad": {
         "title": "Privacy Policy",
